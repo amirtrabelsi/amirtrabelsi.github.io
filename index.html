@@ -1,78 +1,94 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Amir TRABELSI</title>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Amir TRABELSI</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
+    <!-- NAVBAR -->
+    <nav>
+        <h2 class="logo">Amir TRABELSI</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-  <!-- NAVBAR -->
-  <nav>
-    <h2 class="logo">Amir TRABELSI</h2>
-    <ul>
-      <li><a href="#home">Accueil</a></li>
-      <li><a href="#about">À propos</a></li>
-      <li><a href="#projects">Projets</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
 
-  <!-- HERO -->
-  <section id="home" class="hero">
-    <img src="images/profile.png" alt="Photo profil">
-    <h1> <span>Amir TRABELSI</span></h1>
-    <p>Doctor of Robotics Engineering</p>
-    <p>LS2N - Laboratoire des Sciences Numériques de Nantes Centrale Nantes</p>
-    
-  </section>
+        <img src="images/profile.png" alt="Profile Picture" class="profile-img">
 
-  <!-- ABOUT -->
-  <section id="about">
-    <h2>À propos de moi</h2>
-    <p>
-      Je suis un développeur passionné par le web.
-      J’aime créer des interfaces modernes, rapides et élégantes.
-    </p>
-  </section>
+        <h1 class="hero-name">Amir TRABELSI</h1>
+        <h2 class="hero-title">Doctor of Robotics Engineering</h2>
+        <h3 class="hero-affiliation">LS2N - Laboratoire des Sciences Numériques de Nantes Centrale Nantes</h3>
 
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2>Mes Projets</h2>
 
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>Projet 1</h3>
-        <p>Description du projet.</p>
-        <a href="#" target="_blank">Voir</a>
-      </div>
+        <!-- Social links -->
+        <div class="social-row">
+            <a href="https://www.researchgate.net/profile/Amir-Trabelsi-2?ev=hdr_xprf" target="_blank">ResearchGate</a>
+            <a href="https://www.linkedin.com/in/amir-trabelsi-9a92ab160/" target="_blank">LinkedIn</a>
+            <a href="mailto:trabelsi-amir@outlook.fr">Email</a>
+            <a href="files/CV_Trabelsi.pdf" target="_blank">CV</a>
+        </div>
 
-      <div class="project-card">
-        <h3>Projet 2</h3>
-        <p>Description du projet.</p>
-        <a href="#" target="_blank">Voir</a>
-      </div>
 
-      <div class="project-card">
-        <h3>Projet 3</h3>
-        <p>Description du projet.</p>
-        <a href="#" target="_blank">Voir</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email : tonemail@email.com</p>
-    <p>GitHub : github.com/tonprofil</p>
-  </section>
 
-  <footer>
-    <p>© 2026 - Ton Nom</p>
-  </footer>
 
-  <script src="script.js"></script>
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a developer passionate about the web. 
+            I enjoy creating modern, fast, and elegant interfaces.
+        </p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Project description.</p>
+                <a href="#" target="_blank">View</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Project description.</p>
+                <a href="#" target="_blank">View</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Project 3</h3>
+                <p>Project description.</p>
+                <a href="#" target="_blank">View</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email : youremail@example.com</p>
+        <p>GitHub : github.com/yourprofile</p>
+    </section>
+
+    <footer>
+        <p>© 2026 - Your Name</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
