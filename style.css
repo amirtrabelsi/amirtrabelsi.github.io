@@ -289,7 +289,7 @@ footer {
     /* Adjusting publication table for mobile */
     .publication-table th, 
     .publication-table td {
-        padding: 8px 4px; 
+        padding: 10px 4px; 
         font-size: 0.8rem;
     }
     
