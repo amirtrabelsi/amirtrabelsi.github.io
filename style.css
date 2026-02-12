@@ -299,7 +299,7 @@ footer {
     
     .publication-table td:nth-child(2) {
         width: 70px; 
-        font-size: 0.75rem; 
+        font-size: 0.8rem; 
         white-space: nowrap; 
     }
 }
