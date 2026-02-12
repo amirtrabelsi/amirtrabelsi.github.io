@@ -286,18 +286,21 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    /* Adjusting publication table for mobile */
     .publication-table th, 
     .publication-table td {
-        padding: 10px;
-        font-size: 0.85rem; 
+        padding: 8px 4px; 
+        font-size: 0.8rem;
     }
     
     .publication-table td:first-child {
-        width: 60px;
+        width: 50px;
     }
     
     .publication-table td:nth-child(2) {
-        width: 90px; 
+        width: 75px; 
+        font-size: 0.75rem; 
+        white-space: nowrap; 
     }
 }
 
