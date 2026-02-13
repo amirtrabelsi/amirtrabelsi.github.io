@@ -15,11 +15,11 @@ body {
 }
 
 section {
-    padding: 20px 20px; /* Top/Bottom 80px, Left/Right 20px */
-    max-width: 1100px;  /* Slightly increased for the 2-column project grid */
-    margin: 0 auto;     /* Centers the section horizontally */
-    width: 90%;         /* Ensures there is always a gap on the sides */
-    scroll-margin-top: 80px; /* Adjust based on your navbar height */
+    padding: 20px 20px; 
+    max-width: 1200px;  
+    margin: 0 auto;     
+    width: 90%;         
+    scroll-margin-top: 80px; 
 }
 
 /* NAVBAR */
@@ -86,8 +86,8 @@ nav a {
 .social-row {
     display: flex;
     justify-content: center;
-    gap: 22px;
-   
+    gap: 2px;
+    flex-wrap: wrap;
 }
 
 .social-row a {
@@ -95,6 +95,15 @@ nav a {
     text-decoration: none;
     font-size: 16px;
     transition: 0.25s;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+}
+
+.social-row a:hover {
+    color: #ffffff;
+    border-color: #38bdf8;
+
 }
 
 /* ABOUT SECTION */
@@ -142,7 +151,7 @@ nav a {
 }
 
 .project-card {
-    background: #23293a; /* Matching the About card color */
+    background: #23293a; 
     padding: 30px;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -180,16 +189,16 @@ nav a {
 /* PUBLICATIONS STYLING */
 .table-container {
     width: 100%;
-    overflow-x: auto; /* Ensures table is scrollable on small screens */
+    overflow-x: auto; 
     margin: 30px 0px ;
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+    -webkit-overflow-scrolling: touch; 
     border-radius: 12px;
     background: #23293a;
 }
 
 .publication-table {        
     width: 100%;
-    min-width: 600px; /* Ensures the table doesn't squash too much */
+    min-width: 600px; 
     border-collapse: collapse;
 }
 
@@ -208,7 +217,7 @@ nav a {
 }
 
 .publication-table tr:hover {
-    background-color: rgba(56, 189, 248, 0.05); /* Subtle highlight on hover */
+    background-color: rgba(56, 189, 248, 0.05); 
 }
 
 .publication-table td:first-child {
@@ -235,17 +244,25 @@ footer {
     background: #282C34;
 }
 
-/* RESPONSIVE 
+
+
+/* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
+        padding: 15px 20px;
     }
+
 }
-*/
+
 
 /* MOBILE FIXES */
 @media (max-width: 600px) {
+
+    section {
+        padding: 20px 5px;
+    }
 
     nav {
         flex-direction: column;
@@ -254,6 +271,11 @@ footer {
 
     .hero {
         padding: 40px 15px;
+    }
+
+    .profile-img {
+        width: 140px;
+        height: 140px;
     }
 
     .hero-name {
@@ -266,27 +288,34 @@ footer {
 
     .social-row {
         flex-wrap: wrap;
-        gap: 12px;
+        gap: 1px;
+
     }
 
     .social-row a {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .summary-card {
-        padding: 18px 20px;
-        font-size: 1rem;
+        padding: 20px 15px;
+        font-size: 0.9rem;
+    }
+    .summary-card p {
+        font-size: 0.95rem;
     }
 
-    .profile-img {
-        width: 110px;
-        height: 110px;
-    }
+    /* project section */
+    
+
+
     .projects-grid {
         grid-template-columns: 1fr;
     }
 
-    /* Adjusting publication table for mobile */
+
+
+
+    /* publication table */
     .publication-table th, 
     .publication-table td {
         padding: 10px 4px; 
@@ -294,13 +323,29 @@ footer {
     }
     
     .publication-table td:first-child {
-        width: 50px;
+        text-align: center;
+        width: 45px;
     }
     
     .publication-table td:nth-child(2) {
-        width: 70px; 
+        width: 80px; 
         font-size: 0.8rem; 
+        text-align: center;
         white-space: nowrap; 
+    }
+
+
+}
+
+/* PRINT STYLES */
+@media print {
+    nav,
+    footer {
+        display: none;
+    }
+
+    body {
+        background: white;
     }
 }
 
