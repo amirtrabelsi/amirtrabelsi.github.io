@@ -196,6 +196,7 @@ nav a {
 .project-icon {
     width: 45px;
     height: 45px;
+    flex-shrink: 0;
     background: #d5e3fc;
     display: flex;
     align-items: center;
@@ -203,6 +204,7 @@ nav a {
     border-radius: 12px;
     color: #38bdf8;
     font-size: 18px;
+    overflow: hidden;
 }
 
 .project-logo {
@@ -585,7 +587,6 @@ footer {
         height: 40px;
     }
 
-    /*
     .slider-btn {
         opacity: 1 !important; 
         width: 45px; 
@@ -593,7 +594,6 @@ footer {
         background: rgba(30, 41, 59, 0.9); 
         z-index: 9990;
     }
-    */
 
 
 
