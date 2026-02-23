@@ -9,4 +9,7 @@ images/qrcode_Portfolio.png
 *.mov
 *.HEIC
 *.heic
+*.mkv
 /Projoects/airplane/*
+/Projoects/Ardupilot/*
+/Projoects/DT/*
